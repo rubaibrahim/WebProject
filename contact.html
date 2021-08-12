@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="menubox.js">
+  <title> Contact Us </title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+    </div>
+    <ul class="text-menu">
+      <li> <a href="home.html" style="color: black; font-weight: bold;"> Home </a></li>
+      <li> <a href="gallery.html"> Gallery </a></li>
+      <li> <a href="customer.html"> Customer Profile </a></li>
+      <li> <a href="contact.html"> Contact us </a> </li>
+    </ul>
+
+  </header>
+
+  <div class="menu-img-box">
+
+    <nav>
+      <ul>
+        <li><a href="home.html"><img src="style/img/icons/homepage.png" width="90px" height="90px" alt="homepage"></a>
+        </li>
+        <li><a href="gallery.html"><img src="style/img/icons/rentpage.png" width="90px" height="90px"
+              alt="rentpage"></a></li>
+        <li><a href="customer.html"><img src="style/img/icons/customerpage.png" width="90px" height="90px"
+              alt="customerpage"></a></li>
+        <li><a href="contact.html"><img src="style/img/icons/contactpage.png" width="90px" height="90px"
+              alt="Contactuspage"></a></li>
+      </ul>
+    </nav>
+
+    <div class="toggle-setting">
+      <img src="style/img/icons/menu.png" width="25px" height="25px" alt="">
+    </div>
+
+  </div>
+
+  <div class="paragraph-form">
+    <h1> Contact Us </h1>
+    <hr>
+
+    <form method="post" action="">
+
+
+
+      <p> <strong> Please fill this form in a decent manner</strong> </p>
+
+
+      <label> First Name: <br>
+        <input name="name2" type="text" placeholder="Enter first name " size="25" maxlength="20">
+      </label>
+      <br>
+      <br>
+      <label> Last Name: <br>
+        <input name="name1" type="text" placeholder="Enter last name" size="25" maxlength="20">
+      </label>
+
+
+
+      <p>
+        <label> Phone Number : <br>
+          <input type="tel" name="tel" placeholder=" (###) ###-####" size="25" pattern="\(\d{3}\)+\d{3}-\d{4}"
+            required />
+        </label>
+      </p>
+
+
+      <p>
+        <label> Email: <br>
+          <input name="email" type="text" placeholder="name@domain.com" size="25" maxlength="40" required>
+        </label>
+      </p>
+
+
+      <p>
+        <label> Title of content : <br>
+          <input name="subject" type="text" size="25" maxlength="20" required>
+        </label>
+      </p>
+
+      <p>
+        <label> Content: <br>
+          <textarea name="comments" rows="4" cols="40">
+    write here </textarea>
+        </label>
+      </p>
+
+      <strong s> When do you want to contact with you ?</strong> <br><br>
+
+
+      <label style="font-family: Arial, Helvetica, sans-serif;"> 9-11 AM
+        <input name="contactWithYou" type="checkbox" value="AM"> </label>
+
+      <label style="font-family: Arial, Helvetica, sans-serif;"> 1-4 PM
+        <input name="contactWithYou" type="checkbox" value="PM"> </label>
+
+      <label style="font-family: Arial, Helvetica, sans-serif;"> 6-9 PM
+        <input name="contactWithYou" type="checkbox" value="PM"> </label>
+
+
+
+      <p>
+        <input class="button-send" type="submit" value="Send">
+        <input class="button-clear" type="reset" value="Clear">
+      </p>
+
+
+
+    </form>
+
+  </div>
+
+  <hr>
+  <h3 style="padding-left:10pt;"> Other contact information </h3>
+  <div class="other-contact">
+
+      <nav class="dropdown"> social media
+      <ul>
+        <li>
+          <a href="mailto:amira799am@gmail.com">
+            <img src="style/img/icons/email.jpg" width="30" height="30" />
+          </a>
+        </li>
+        <li>
+
+          <a href="http://www.twitter.com"><img src="style/img/icons/twitter.png" width="30" height="30" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.facebook.com">
+            <img src="style/img/icons/facebook1.jpg" width="30" height="30" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-heading-footer1">
+        <h3>About us </h3>
+        <p>
+          Property founder Website for the best renting options.
+        </p>
+      </div>
+
+
+      <div class="footer-heading footer2">
+        <h3> Contact information</h3>
+        <img src="style/img/icons/number.png" width="55px" height="55px" alt="Phone Number"> 0551234567
+        <img src="style/img/icons/mail.png" width="55px" height="55px" alt="Email">aqark@gmail.com
+      </div>
+
+      <div class="footer-copy">
+        Copyright &copy; 2021 Aqark.com | Designed by Aqark
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  document.querySelector(".toggle-setting img ").onclick = function () {
+
+    // toggle setting box with open class for show the setting 
+    document.querySelector(".menu-img-box").classList.toggle("open");
+  } 
+</script>
+
+</html>

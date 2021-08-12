@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="menubox.js">
+  <title> Customer Profile </title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+    </div>
+    <ul class="text-menu">
+      <li> <a href="home.html" style="color: black; font-weight: bold;"> Home </a></li>
+      <li> <a href="gallery.html"> Gallery </a></li>
+      <li> <a href="customer.html"> Customer Profile </a></li>
+      <li> <a href="contact.html"> Contact us </a> </li>
+    </ul>
+  </header>
+
+  <div class="menu-img-box">
+
+    <nav>
+      <ul>
+        <li><a href="home.html"><img src="style/img/icons/homepage.png" width="90px" height="90px" alt="homepage"></a>
+        </li>
+        <li><a href="gallery.html"><img src="style/img/icons/rentpage.png" width="90px" height="90px"
+              alt="rentpage"></a></li>
+        <li><a href="customer.html"><img src="style/img/icons/customerpage.png" width="90px" height="90px"
+              alt="customerpage"></a></li>
+        <li><a href="contact.html"><img src="style/img/icons/contactpage.png" width="90px" height="90px"
+              alt="Contactuspage"></a></li>
+      </ul>
+    </nav>
+
+    <div class="toggle-setting">
+      <img src="style/img/icons/menu.png" width="25px" height="25px" alt="">
+    </div>
+
+  </div>
+
+  <div class="paragraph-form">
+    <h1> Customer information </h1>
+    <hr>
+    <form class="form" method="post" action="http://www.deitel.com" autocomplete="on">
+      <p><label>First Name:<br>
+          <input name="fname" type="text" size="25" maxlength="30">
+        </label></p>
+      <p><label>Last Name:<br>
+          <input name="lname" type="text" size="25" maxlength="30">
+        </label></p>
+
+      <p><label>Your ID Number:<br>
+          <input name="id" type="text" size="25" maxlength="30" required>
+        </label></p>
+
+      <p><label>Phone Number:<br>
+          <input type="tel" name="tel" placeholder="(###) ###-####" pattern="\(\d{3}\)+\d{3}-\d{4}" size="25"
+            required />
+        </label></p>
+
+      <p><label>Email:<br>
+          <input type="email" name="email" placeholder="name@domain.com" size="25" required>
+        </label></p>
+
+      <p><label>House Number:<br>
+          <input name="housenumber" type="text">
+        </label></p>
+
+      <p><label>Rental Starting Date: <br>
+          <input name="fdate" type="date" />
+
+          <p><label> Rental Ending Date: <br>
+              <input name="edate" type="date" />
+            </label></p>
+          <p>
+
+          <p>
+            <input class="button-send" type="submit" value="Send">
+            <input class="button-clear" type="reset" value="Clear">
+          </p>
+
+    </form>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-heading-footer1">
+        <h3>About us </h3>
+        <p>
+          Property founder Website for the best renting options.
+        </p>
+      </div>
+
+
+      <div class="footer-heading footer2">
+        <h3> Contact information</h3>
+        <img src="style/img/icons/number.png" width="55px" height="55px" alt="Phone Number"> 0551234567
+        <img src="style/img/icons/mail.png" width="55px" height="55px" alt="Email">aqark@gmail.com
+      </div>
+
+      <div class="footer-copy">
+        Copyright &copy; 2021 Aqark.com | Designed by Aqark
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  document.querySelector(".toggle-setting img ").onclick = function () {
+
+    // toggle setting box with open class for show the setting 
+    document.querySelector(".menu-img-box").classList.toggle("open");
+  } 
+</script>
+
+</html>
